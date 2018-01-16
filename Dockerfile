@@ -7,7 +7,7 @@ ENV PORT 80
 ENV VHOST localhost.dev
 
 RUN apt update && apt -y upgrade;
-RUN apt install apt-transport-https lsb-release ca-certificates -y;
+RUN apt install apt-transport-https lsb-release ca-certificates wget -y;
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 RUN echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list
 RUN apt update
