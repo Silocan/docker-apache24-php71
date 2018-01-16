@@ -1,5 +1,5 @@
 FROM debian:8.10
-MAINTAINER Nicolas FATREZ <docker@fatrez.com>
+MAINTAINER Nicolas FATREZ <developer@unid-consulting.fr>
 
 ENV APP_ENV development
 ENV WWW /var/www/html
