@@ -14,7 +14,8 @@ RUN apt update
 RUN apt-get -y install wget nano;
 RUN apt-get -y install apache2;
 RUN apt-get -y install php7.1 libapache2-mod-php7.1;
-RUN apt-get -y install php7.1-mysqlnd php7.1-curl php7.1-gd php-pear php7.1-imagick php7.1-imap php7.1-mcrypt php7.1-xmlrpc php7.1-xsl php7.1-intl;
+RUN apt-get -y install php7.1-mysqlnd php7.1-curl php7.1-gd php-pear php7.1-imagick php7.1-imap php7.1-mcrypt 
+php7.1-xmlrpc php7.1-xsl php7.1-intl php7.1-mbstring;
 RUN cd /tmp; wget https://getcomposer.org/composer.phar; chmod +x /tmp/composer.phar; mv /tmp/composer.phar /usr/local/bin/composer;
 RUN a2enmod rewrite;
 
